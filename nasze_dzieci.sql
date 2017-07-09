@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 09 Lip 2017, 18:06
+-- Czas generowania: 09 Lip 2017, 22:08
 -- Wersja serwera: 10.1.21-MariaDB
 -- Wersja PHP: 7.1.1
 
@@ -66,7 +66,10 @@ CREATE TABLE `news` (
 
 INSERT INTO `news` (`id`, `name`, `href`, `time`, `year`, `month`, `day`) VALUES
 (1, 'Lorem ipsum dolor sit amet enim.', 'lorem_ipsum_dolor_sit_amet_enim', '11:15', 2017, 7, 9),
-(3, 'Litwo! Ojczyzno moja!', 'litwo_ojczyzno_moja', '14:07', 2017, 7, 9);
+(3, 'Litwo! Ojczyzno moja!', 'litwo_ojczyzno_moja', '14:07', 2017, 7, 9),
+(4, 'Tantas disputationi et vel, ne mazim dicit voluptatum eam.', 'tantas_disputationi_et_vel_ne_mazim_dicit_voluptatum_eam', '20:00', 2017, 6, 15),
+(5, 'Nec ex dolorem definitiones', 'nec_ex_dolorem_definitiones', '22:00', 2017, 6, 4),
+(6, 'Vero veritus suscipiantur ea mei.', 'vero_veritus_suscipiantur_ea_mei', '12:05', 2017, 5, 29);
 
 -- --------------------------------------------------------
 
@@ -86,7 +89,10 @@ CREATE TABLE `newsdescribe` (
 
 INSERT INTO `newsdescribe` (`id`, `newsid`, `paragraph`) VALUES
 (1, 1, 'Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.'),
-(3, 3, 'Ty jesteÅ› jak zdrowie. Ile ciÄ™ straciÅ‚. DziÅ› piÄ™knoÅ›Ä‡ zda siÄ™ jak szlachcic bez litoÅ›ci wsiedli sp&oacute;r byÅ‚ Å¼onaty a zwierzÄ™ nie odm&oacute;wi. To nie moÅ¼e. WidaÄ‡, Å¼e on je tak i cap! - odpowiedziaÅ‚ Robak obojÄ™tnie WidaÄ‡ byÅ‚o, Å¼e oko nie wyszli witaÄ‡, ale nic to m&oacute;wiÄ…c, Å¼e nas powr&oacute;cisz cudem Gdy siÄ™ moÅ¼emy na Å›cianach wisiaÅ‚y.');
+(3, 3, 'Ty jesteÅ› jak zdrowie. Ile ciÄ™ straciÅ‚. DziÅ› piÄ™knoÅ›Ä‡ zda siÄ™ jak szlachcic bez litoÅ›ci wsiedli sp&oacute;r byÅ‚ Å¼onaty a zwierzÄ™ nie odm&oacute;wi. To nie moÅ¼e. WidaÄ‡, Å¼e on je tak i cap! - odpowiedziaÅ‚ Robak obojÄ™tnie WidaÄ‡ byÅ‚o, Å¼e oko nie wyszli witaÄ‡, ale nic to m&oacute;wiÄ…c, Å¼e nas powr&oacute;cisz cudem Gdy siÄ™ moÅ¼emy na Å›cianach wisiaÅ‚y.'),
+(4, 4, 'Cum mollis voluptua inimicus eu, usu hinc deserunt at, vix porro voluptaria id. Modo electram ea cum, eu splendide dissentiet mea. Qui choro quodsi cu. Etiam consulatu mel ei, quo an diceret tincidunt repudiandae. An saepe aliquando mei, ne sea imperdiet voluptatibus.'),
+(5, 5, 'Sed debitis repudiare ei, sea at insolens comprehensam, no quem suas mea. Et eos magna dolorum elaboraret, tempor inermis intellegat sit ea, ad ius adhuc assum signiferumque. Ei sed adipiscing assueverit disputando, et appareat appetere ius. Stet augue abhorreant est cu, mea omnes soleat philosophia et, dolore persius feugait vel eu.'),
+(6, 6, 'Ei agam affert has. Mea diam antiopam mnesarchum in, nam ne mutat forensibus incorrupte. Ut ridens graecis assueverit nam, vis verear scriptorem liberavisse cu. Elitr persequeris te nec, in cum tota ludus dictas. Eos qualisque deterruisset an. Sonet choro nusquam ad vis, appetere praesent eum ea. Nullam corrumpit percipitur ei qui. Nostro eripuit est ei. Cum id brute fuisset quaestio, no eos atqui deleniti. An partem posidonium adversarium mel.');
 
 -- --------------------------------------------------------
 
@@ -177,12 +183,12 @@ ALTER TABLE `details`
 -- AUTO_INCREMENT dla tabeli `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT dla tabeli `newsdescribe`
 --
 ALTER TABLE `newsdescribe`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT dla tabeli `newsimages`
 --

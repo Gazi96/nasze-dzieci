@@ -28,6 +28,8 @@ class News extends Controller {
         $this->view->images = $this->model->loadImages($this->view->news['id']);
         $this->view->describes = $this->model->loadDescribes($this->view->news['id']);
         
+        $this->view->tree = $this->model->loadTree();
+        
         $this->view->render('news');
     }
     

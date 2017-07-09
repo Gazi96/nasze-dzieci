@@ -12,7 +12,7 @@
     
     if($news !== false){
         foreach ($news as $row){
-            echo "<div><a href='".$row['href']."'>";
+            echo "<div><a href='".URL.$row['href']."'>";
             echo '<h1>'.$row['name'].'</h1>';
             
             foreach ($describes[$row['id']] as $des){
