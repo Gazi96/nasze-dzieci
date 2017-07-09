@@ -6,13 +6,15 @@ class View {
         
     }
     
-    public function render($name, $flag = true){
-        if ($flag) {
+    public function render($name, $mode = 'web'){
+        if ($mode == 'web') {
             require 'views/header.php';
             require 'views/' . $name . '.php';
             require 'views/footer.php';
-        } else {
-            require 'views/' . $name . '.php';
+        } elseif ($mode == 'admin') {
+            require 'views/adminpanel/header.php';
+            require 'views/adminpanel/' . $name . '.php';
+            require 'views/adminpanel/footer.php';
         }
     }
 }
