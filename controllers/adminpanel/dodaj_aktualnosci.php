@@ -19,4 +19,20 @@ class AddNews extends Controller {
         $this->view->title = 'Dodaj';
         $this->view->render('dodaj_aktualnosci', 'admin');
     }
+    
+    function action() {
+        $name = htmlentities(filter_input(INPUT_POST, 'name', 
+                        FILTER_SANITIZE_STRING),ENT_QUOTES);
+        
+        $describe = htmlentities(filter_input(INPUT_POST, 'describe', 
+                        FILTER_SANITIZE_STRING),ENT_QUOTES);
+        
+        $id = $this->model->addNews($name);
+        $this->model->addDescribe($id, $describe);
+        
+        $this->view->done = true;
+        $this->view->id = $id;
+        
+        $this->index();
+    }
 }

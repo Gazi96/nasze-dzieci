@@ -15,15 +15,14 @@ class AdminPanel extends Controller {
     }
     
     function index() {
-        $this->view->title = 'Przeglądaj';
-        $this->view->render('przegladaj_aktualnosci', 'admin');
-    }
-    
-    function przegladaj_aktualnosci(){
         require 'controllers/adminpanel/przegladaj_aktualnosci.php';
         $controller = new ReviewNews();
         $controller->loadModel('Review');
         $controller->index();
+    }
+    
+    function przegladaj_aktualnosci(){
+        $this->index();
     }
     
     function edytuj_aktualnosci($newsid, $function = ''){
@@ -39,11 +38,17 @@ class AdminPanel extends Controller {
         }
     }
     
-    function dodaj_aktualnosci(){
+    function dodaj_aktualnosci($function = ''){
         require 'controllers/adminpanel/dodaj_aktualnosci.php';
         $controller = new AddNews();
-        //$controller->loadModel('adminIndex');
-        $controller->index();
+        $controller->loadModel('AddNews');
+        if($function == ''){
+            $controller->index();
+        } elseif($function == 'action'){
+            $controller->action();
+        } elseif($function == 'zmien_haslo'){
+            //$controller->zmien_haslo($method);
+        }
     }
     
     function ustawienia($function = '', $method= ''){
