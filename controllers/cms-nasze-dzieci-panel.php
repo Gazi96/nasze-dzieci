@@ -22,7 +22,7 @@ class AdminPanel extends Controller {
     function przegladaj_aktualnosci(){
         require 'controllers/adminpanel/przegladaj_aktualnosci.php';
         $controller = new ReviewNews();
-        //$controller->loadModel('adminIndex');
+        $controller->loadModel('Review');
         $controller->index();
     }
     

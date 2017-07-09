@@ -17,6 +17,14 @@ class ReviewNews extends Controller {
     
     function index() {
         $this->view->title = 'Przeglądaj';
+        
+        $this->view->news = $this->model->loadNews();
+        
+        foreach ($this->view->news as $row){
+            $this->view->images[$row['id']] = $this->model->loadImages($row['id']);
+            $this->view->describes[$row['id']] = $this->model->loadDescribes($row['id']);
+        }
+        
         $this->view->render('przegladaj_aktualnosci', 'admin');
     }
 }
