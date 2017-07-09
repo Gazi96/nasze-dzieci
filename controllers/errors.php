@@ -9,6 +9,6 @@ class Errors extends Controller {
     
     function index() {
         $this->view->title = 'Error';
-        $this->view->render('errors');
+        $this->view->render('errors', 'errors');
     }
 }

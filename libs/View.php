@@ -15,6 +15,8 @@ class View {
             require 'views/adminpanel/header.php';
             require 'views/adminpanel/' . $name . '.php';
             require 'views/adminpanel/footer.php';
+        } elseif ($mode == 'errors') {
+            require 'views/' . $name . '.php';
         }
     }
 }

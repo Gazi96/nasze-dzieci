@@ -1,32 +1,22 @@
 <?php
 
-class AdminLogin extends Controller {
+class AdminPanel extends Controller {
 
     function __construct() {
         parent::__construct();
         Session::init();
-        $logged = Session::get('logged');
+        $logged = Session::get('a2adebdt39$0');
+        $adm = Session::get('37b421#lcas$oo0$e');
         
-        if ($logged == true) {
-            header('location: '.URL.'cms-nasze-dzieci-panel/przegladaj_aktualnosci');
-            exit;
+        if ($logged == false || $adm == false) {
+            header('location: '.URL.'errors');
+            exit();
         }
     }
     
     function index() {
-        $this->view->title = 'Logowanie';
-        $this->view->render('cms-nasze-dzieci-panel');
-    }
-    
-    function action(){
-        $flag = $this->model->action();
-        
-        if($flag){
-            header('location: '.URL.'cms-nasze-dzieci-panel/przegladaj_aktualnosci');
-        } else {
-            $this->view->error = 'Błędny login i/lub hasło';
-            $this->index();
-        }
+        $this->view->title = 'Przeglądaj';
+        $this->view->render('przegladaj_aktualnosci', 'admin');
     }
     
     function przegladaj_aktualnosci(){
@@ -68,5 +58,11 @@ class AdminLogin extends Controller {
         } elseif($function == 'zmien_haslo'){
             $controller->zmien_haslo($method);
         }
+    }
+    
+    function logout(){
+        Session::destroy();
+        header('location: '.URL);
+        exit;
     }
 }

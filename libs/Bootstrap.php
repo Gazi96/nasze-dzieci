@@ -59,7 +59,9 @@ class Bootstrap {
             'kontakt' => 'Contact',
             'mozesz-pomoc' => 'HowHelp',
             'o-nas' => 'About',
-            'cms-nasze-dzieci-panel' => 'AdminLogin');
+            'cms-nasze-dzieci-login' => 'AdminLogin',
+            'cms-nasze-dzieci-panel' => 'AdminPanel',
+            'errors' => 'Errors');
         $this->controller = new $controllers[$url[0]];
         $this->controller->loadModel($controllers[$url[0]]);
         

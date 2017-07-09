@@ -13,7 +13,7 @@
                     echo "<div>$this->error </div>";
                 }
             ?>
-            <form action="<?php echo URL; ?>cms-nasze-dzieci-panel/action" method="post">
+            <form action="<?php echo URL; ?>cms-nasze-dzieci-login/action" method="post">
                 <table>
                     <tr>
                         <td>E-mail:</td>
