@@ -12,17 +12,20 @@ class Bootstrap {
         if($this->emptyUrl($url[0])) {
             return false;
         }
-        if($this->requireFile($url)){
+        elseif($this->requireFile($url)){
             $this->loadController($url);
             return false;
-        } else {
-            if($this->checkNews($url[0])){
-                $this->renderNews($url[0]);
-                return false;
-            } else{
-                $this->errors();
-                return false;
-            }
+        }
+        elseif($this->checkNews($url[0])){
+            $this->renderNews($url[0]);
+            return false;
+        }
+        elseif($this->checkArchives($url)) {
+            $this->renderArchive($url);
+        }
+        else{
+            $this->errors();
+            return false;
         }
     }
 
@@ -100,6 +103,27 @@ class Bootstrap {
     function renderNews($url){
         $href[0] = 'aktualnosci';
         $href[1] = 'renderNews';
+        $href[2] = $url;
+        $this->requireFile($href);
+        $this->loadController($href);
+    }
+    
+    function checkArchives($url) {
+        if(is_numeric($url[0]) && is_numeric($url[1]) && !isset($url[2])){
+            require 'models/News.php';
+            $modelName = 'NewsModel';
+            $model = new $modelName();
+            $flag = $model->checkArchives($url[0], $url[1]);
+            
+            return $flag;
+        } else {
+            return false;
+        }
+    }
+    
+    function renderArchive($url){
+        $href[0] = 'aktualnosci';
+        $href[1] = 'renderArchive';
         $href[2] = $url;
         $this->requireFile($href);
         $this->loadController($href);

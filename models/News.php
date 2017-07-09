@@ -19,6 +19,23 @@ class NewsModel extends Model {
         }
     }
     
+    function loadArchives($year, $month){
+        $sth = $this->db->prepare("SELECT * FROM news WHERE "
+                ."year = :year AND month = :month");
+        
+        $sth->execute(array(
+            ':year' => $year,
+            ':month' => $month
+        ));
+        
+        $count = $sth->rowCount();
+        if($count > 0) {
+            return $sth->fetchAll(PDO::FETCH_ASSOC);
+        } else {
+            return false;
+        }
+    }
+    
     function loadImages($newsid){
         $sth = $this->db->prepare("SELECT * FROM newsimages WHERE newsid = :newsid");
         
@@ -60,6 +77,37 @@ class NewsModel extends Model {
         if($count > 0) {
             $data = $sth->fetchAll(PDO::FETCH_ASSOC);
             return $data[0];
+        } else {
+            return false;
+        }
+    }
+    
+    function loadTree() {
+        $sth = $this->db->prepare("SELECT year, month, Count(*) FROM news GROUP BY "
+                ."year, month ORDER BY year, month DESC");
+        
+        $sth->execute();
+        
+        $count = $sth->rowCount();
+        if($count > 0) {
+            return $sth->fetchAll(PDO::FETCH_ASSOC);
+        } else {
+            return false;
+        }
+    }
+    
+    function checkArchives($year, $month){
+        $sth = $this->db->prepare("SELECT * FROM news WHERE "
+                ."year = :year AND month = :month");
+        
+        $sth->execute(array(
+            ':year' => $year,
+            ':month' => $month
+        ));
+        
+        $count = $sth->rowCount();
+        if($count > 0) {
+            return true;
         } else {
             return false;
         }

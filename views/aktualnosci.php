@@ -25,3 +25,20 @@
     }
     ?>
 </div>
+
+<div>
+    <h1>Archiwum</h1>
+    <ul>
+    <?php
+    $miesiac = array( '', 'Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec',
+        'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień' );
+    
+    $tree = $this->tree;
+    foreach($tree as $row){
+        echo "<li><a href='".URL.$row['year'].'/'.$row['month']."'>";
+        echo $miesiac[intval($row['month'])].' '.$row['year'].' ('.$row['Count(*)'].')';
+        echo '</a></li>';
+    }
+    ?>
+    </ul>
+</div>
