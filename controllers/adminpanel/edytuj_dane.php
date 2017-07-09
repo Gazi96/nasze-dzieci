@@ -1,6 +1,6 @@
 <?php
 
-class Contact extends Controller {
+class Details extends Controller {
 
     function __construct() {
         parent::__construct();
@@ -8,10 +8,10 @@ class Contact extends Controller {
     }
     
     function index() {
-        $this->view->title = 'Kontakt';
+        $this->view->title = 'Edytuj Dane';
         
         $this->view->details = $this->model->getDetails();
         
-        $this->view->render('kontakt');
+        $this->view->render('edytuj_dane', 'admin');
     }
 }

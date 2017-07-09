@@ -9,6 +9,10 @@ class ChangePass extends Controller {
     
     function index() {
         $this->view->title = 'Zmień Hasło';
-        $this->view->render('ustawienia/zmien_haslo', 'admin');
+        $this->view->render('zmien_haslo', 'admin');
+    }
+    
+    function action() {
+        
     }
 }

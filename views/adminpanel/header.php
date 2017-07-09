@@ -13,10 +13,10 @@
                     <ul>
                         <li><a href="<?php echo URL; ?>cms-nasze-dzieci-panel/dodaj_aktualnosci">Dodaj</a></li>
                         <li><a href="<?php echo URL; ?>cms-nasze-dzieci-panel/przegladaj_aktualnosci">Przeglądaj</a></li>
-                        <li><a href="<?php echo URL; ?>cms-nasze-dzieci-panel/ustawienia">Ustawienia</a>
+                        <li>Ustawienia
                             <ul>
-                                <li><a href="<?php echo URL; ?>cms-nasze-dzieci-panel/ustawienia/kontakt">Kontakt</a></li>
-                                <li><a href="<?php echo URL; ?>cms-nasze-dzieci-panel/ustawienia/zmien_haslo">Zmień Hasło</a></li>
+                                <li><a href="<?php echo URL; ?>cms-nasze-dzieci-panel/edytuj_dane">Edytuj Dane</a></li>
+                                <li><a href="<?php echo URL; ?>cms-nasze-dzieci-panel/zmien_haslo">Zmień Hasło</a></li>
                             </ul>
                         </li>
                     </ul>

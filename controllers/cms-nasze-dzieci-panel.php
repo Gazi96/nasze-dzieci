@@ -31,10 +31,10 @@ class AdminPanel extends Controller {
         //$controller->loadModel('adminIndex');
         if($function == ''){
             $controller->index($newsid);
-        } elseif($function == 'kontakt'){
-            //$controller->kontakt($method);
-        } elseif($function == 'zmien_haslo'){
-            //$controller->zmien_haslo($method);
+        } elseif($function == 'action'){
+            //$controller->action($method);
+        } elseif($function == 'delete'){
+            //$controller->delete($method);
         }
     }
     
@@ -46,22 +46,34 @@ class AdminPanel extends Controller {
             $controller->index();
         } elseif($function == 'action'){
             $controller->action();
-        } elseif($function == 'zmien_haslo'){
-            //$controller->zmien_haslo($method);
+        } else {
+            header('location: '.URL.'errors');
         }
     }
     
-    function ustawienia($function = '', $method= ''){
-        require 'controllers/adminpanel/ustawienia.php';
-        $controller = new Settings();
-        //$controller->loadModel('adminIndex');
-        
+    function edytuj_dane($function = '') {
+        require 'controllers/adminpanel/edytuj_dane.php';
+        $controller = new Details();
+        $controller->loadModel('Details');
         if($function == ''){
             $controller->index();
-        } elseif($function == 'kontakt'){
-            $controller->kontakt($method);
-        } elseif($function == 'zmien_haslo'){
-            $controller->zmien_haslo($method);
+        } elseif($function == 'action'){
+            //$controller->kontakt();
+        } else {
+            header('location: '.URL.'errors');
+        }
+    }
+    
+    function zmien_haslo($function = '') {
+        require 'controllers/adminpanel/zmien_haslo.php';
+        $controller = new ChangePass();
+        $controller->loadModel('Settings');
+        if($function == ''){
+            $controller->index();
+        } elseif($function == 'action'){
+            $controller->action();
+        } else {
+            header('location: '.URL.'errors');
         }
     }
     
