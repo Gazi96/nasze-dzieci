@@ -9,6 +9,23 @@ class News extends Controller {
     
     function index() {
         $this->view->title = 'Aktualności';
+        $this->view->news = $this->model->loadNews();
+        
+        foreach ($this->view->news as $row){
+            $this->view->images[$row['id']] = $this->model->loadImages($row['id']);
+            $this->view->describes[$row['id']] = $this->model->loadDescribes($row['id']);
+        }
+        
         $this->view->render('aktualnosci');
+    }
+    
+    function renderNews($href){
+        $this->view->news = $this->model->loadHref($href);
+        $this->view->title = $this->view->news['name'];
+        
+        $this->view->images = $this->model->loadImages($this->view->news['id']);
+        $this->view->describes = $this->model->loadDescribes($this->view->news['id']);
+        
+        $this->view->render('news');
     }
 }

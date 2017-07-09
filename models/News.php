@@ -1,6 +1,6 @@
 <?php
 
-class ReviewModel extends Model {
+class NewsModel extends Model {
 
     function __construct() {
         parent::__construct();
@@ -58,7 +58,8 @@ class ReviewModel extends Model {
         
         $count = $sth->rowCount();
         if($count > 0) {
-            return true;
+            $data = $sth->fetchAll(PDO::FETCH_ASSOC);
+            return $data[0];
         } else {
             return false;
         }

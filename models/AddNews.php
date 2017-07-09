@@ -6,11 +6,10 @@ class AddNewsModel extends Model {
         parent::__construct();
     }
     
-    function addNews($name){
+    function addNews($name, $href){
         $sth = $this->db->prepare("INSERT INTO news VALUES(NULL, :name, "
                 . ":href, :time, :year, :month, :day);");
         
-        $href = '#';
         $time = date("H:m");
         $year = date("Y");
         $month = date("m");

@@ -11,11 +11,15 @@ class Bootstrap {
         
         if($this->emptyUrl($url[0])) {
             return false;
+        }
+        if($this->requireFile($url)){
+            $this->loadController($url);
+            return false;
         } else {
-            if($this->requireFile($url)){
-                $this->loadController($url);
+            if($this->checkNews($url[0])){
+                $this->renderNews($url[0]);
                 return false;
-            } else {
+            } else{
                 $this->errors();
                 return false;
             }
@@ -73,15 +77,31 @@ class Bootstrap {
     }
     
     function loadMethod($url) {
-            if (method_exists($this->controller, $url[1])) {
-                if (isset($url[2])) {
-                    $this->controller->{$url[1]}($url[2]);
-                } else {
-                    $this->controller->{$url[1]}();
-                }
+        if (method_exists($this->controller, $url[1])) {
+            if (isset($url[2])) {
+                $this->controller->{$url[1]}($url[2]);
             } else {
-                $this->errors();
-                return false;
+                $this->controller->{$url[1]}();
             }
+        } else {
+            $this->errors();
+            return false;
+        }
+    }
+    
+    function checkNews($href){
+        require 'models/Review.php';
+        $modelName = 'ReviewModel';
+        $model = new $modelName();
+        
+        return $model->loadHref($href);
+    }
+    
+    function renderNews($url){
+        $href[0] = 'aktualnosci';
+        $href[1] = 'renderNews';
+        $href[2] = $url;
+        $this->requireFile($href);
+        $this->loadController($href);
     }
 }

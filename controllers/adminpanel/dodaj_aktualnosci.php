@@ -27,12 +27,25 @@ class AddNews extends Controller {
         $describe = htmlentities(filter_input(INPUT_POST, 'describe', 
                         FILTER_SANITIZE_STRING),ENT_QUOTES);
         
-        $id = $this->model->addNews($name);
+        $href = $this->makeHref($name);
+        
+        $id = $this->model->addNews($name, $href);
         $this->model->addDescribe($id, $describe);
         
         $this->view->done = true;
         $this->view->id = $id;
+        $this->view->href = $href;
         
         $this->index();
+    }
+    
+    function makeHref($name) {
+        $a = strtolower($name);
+        $b = iconv('utf-8', 'us-ascii//TRANSLIT', $a);
+        $c = preg_replace("/[^a-zA-Z0-9 ]+/", "", $b);
+        $d = trim($c);
+        $href = preg_replace("/[ ]+/", "_", $d);
+        
+        return $href;
     }
 }
