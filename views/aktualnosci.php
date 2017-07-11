@@ -16,6 +16,10 @@
             echo '<h1>'.$row['name'].'</h1>';
             
             foreach ($describes[$row['id']] as $des){
+               if(strlen($des['paragraph']) > 250){
+                    $des['paragraph'] = substr($des['paragraph'], 0, 250);
+                    $des['paragraph'] = substr($des['paragraph'], 0, strrpos($des['paragraph'], ' ')) . " ...";
+                }
                 echo '<p>'.$des['paragraph'].'</p>';
             }
             echo '</a>';
