@@ -1,10 +1,144 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2017-07-08, 20:57:18
-    Author     : Sebastian
-*/
+*
+{
+    margin:0;
+    padding: 0;
+    font-size: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header
+{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#top-nav
+{
+    width: 100%;
+    height: 30vh;
+    background-color: #2a2b2c;
+    color: gray;
+    border-bottom: 1px solid #EEC43D;
+    padding-left: 18%;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+#nav
+{
+    background-color: #1e1e20;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-top: 1%;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+#nav ul
+{
+    text-align: right;
+    margin-right: 5%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#nav ul li
+{
+    display: inline-block;
+    margin-top: 8px;
+    border-right: 1px solid grey;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+#nav ul li:last-child
+{
+    border: none;
+}
+
+#nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav ul li ul
+{
+    display: none;
+}
+
+#main-img
+{
+    box-sizing: border-box;
+    background-image: url("../../img/dzieci.jpg");
+    background-size:100% 100%; 
+    background-repeat: no-repeat;
+    height: 430px;
+    width: 100%;
+}
+
+#aktualnosci
+{
+    background-color: #1e1e20;
+    padding-top: 40px;
+    width: 100%;
+    
+}
+
+h1
+{
+    color:white;
+}
+
+h2
+{  
+    font-size: 20px;
+    color: white;
+    margin-left: 10%;
+}
+
+.aktualnosci
+{
+    background-color: white;
+    display: block;
+    float: left;
+    height: 300px;
+    width: 15%;
+    margin-left: 
+    font-size: 20px;
+    margin-left: 4%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.aktualnosci a
+{
+    text-decoration: none;
+    
+}
+
+.aktualnosci p
+{
+    font-size: 10px;
+    color: black;
+    
+}
+
+h3
+{
+    
+    font-size: 20px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+
 

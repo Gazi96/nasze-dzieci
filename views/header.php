@@ -6,10 +6,13 @@
         <link rel="stylesheet" href='<?php echo URL; ?>public/css/default.css'/>
     </head>
     <body>
-        <header>
+       
+        <header id="header">
             <nav>
                 <div><a href="<?php echo URL; ?>">LOGO</a></div>
-                <div>
+                <div id="top-nav">FUNDACJA NASZE DZIECI
+                </div>
+                <div id="nav">
                     <ul>
                         <li><a href="<?php echo URL; ?>o-nas">O nas</a>
                             <ul>
@@ -24,5 +27,7 @@
                     </ul>
                 </div>
             </nav>
+            
+            <div id="main-img"></div>
             
         </header>

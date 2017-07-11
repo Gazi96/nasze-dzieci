@@ -11,8 +11,10 @@
     var_dump($describes);*/
     
     if($news !== false){
+        echo "<div id='aktualnosci'>";
+        echo "<h2>Aktualności</h2>";
         foreach ($news as $row){
-            echo "<div><a href='".$row['href']."'>";
+            echo "<div class='aktualnosci'><a href='".$row['href']."'>";
             echo '<h1>'.$row['name'].'</h1>';
             
             foreach ($describes[$row['id']] as $des){
