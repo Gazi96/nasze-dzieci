@@ -61,14 +61,15 @@ class Bootstrap {
     
     function loadController($url) {
         $controllers = array('aktualnosci' => 'News',
-            'dla-rodzicow' => 'ForParents',
             'index' => 'Index',
             'kontakt' => 'Contact',
             'mozesz-pomoc' => 'HowHelp',
             'o-nas' => 'About',
             'cms-nasze-dzieci-login' => 'AdminLogin',
             'cms-nasze-dzieci-panel' => 'AdminPanel',
-            'errors' => 'Errors');
+            'errors' => 'Errors',
+            'dzialania' => 'Actions',
+            'statut' => 'Statute');
         $this->controller = new $controllers[$url[0]];
         $this->controller->loadModel($controllers[$url[0]]);
         

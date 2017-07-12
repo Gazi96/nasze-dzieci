@@ -9,6 +9,6 @@ class Statute extends Controller {
     
     function index() {
         $this->view->title = 'Statut';
-        $this->view->render('o-nas/statut');
+        $this->view->render('statut');
     }
 }

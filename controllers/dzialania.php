@@ -9,6 +9,6 @@ class Actions extends Controller {
     
     function index() {
         $this->view->title = 'Nasze działania';
-        $this->view->render('o-nas/dzialania');
+        $this->view->render('dzialania');
     }
 }

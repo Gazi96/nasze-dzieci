@@ -14,20 +14,17 @@
                 </div>
                 <div id="nav">
                     <ul>
+                        <li><a href="<?php echo URL; ?>aktualnosci">Aktualności</a></li>
                         <li><a href="<?php echo URL; ?>o-nas">O nas</a>
                             <ul>
-                                <li><a href="<?php echo URL; ?>o-nas/dzialania">Nasza aktywność</a></li>
-                                <li><a href="<?php echo URL; ?>o-nas/statut">Statut stowarzyszenia</a></li>
+                                <li><a href="<?php echo URL; ?>dzialania">Nasze działania</a></li>
+                                <li><a href="<?php echo URL; ?>statut">Statut</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo URL; ?>aktualnosci">Aktualności</a></li>
                         <li><a href="<?php echo URL; ?>mozesz-pomoc">Jak możesz pomóc</a></li>
-                        <li><a href="<?php echo URL; ?>dla-rodzicow">Dla Rodziców</a></li>
+                        <li><a href="<?php echo URL; ?>mozesz-pomoc">Partnerzy</a></li>
                         <li><a href="<?php echo URL; ?>kontakt">Kontakt</a></li>
                     </ul>
                 </div>
             </nav>
-            
-            <div id="main-img"></div>
-            
         </header>
