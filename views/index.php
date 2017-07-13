@@ -5,17 +5,14 @@
     $news = $this->news;
     $describes = $this->describes;
     $images = $this->images;
-    /*var_dump($news);
-    echo '<br>';
-    var_dump($images);
-    echo '<br>';
-    var_dump($describes);*/
     
     if($news !== false){
         echo "<div id='aktualnosci'>";
         echo "<h2>Aktualności</h2>";
         foreach ($news as $row){
-            echo "<div class='aktualnosci'><div class='zdjecie'></div>";
+            echo "<div class='aktualnosci'>";
+            //  TUTAJ MUSZE PODAC ADRES DO ZDJECIA, ONO NIE MOZE BYC W CSS
+            echo "<div class='zdjecie'></div>";
             echo "<a href='".$row['href']."'>";
             echo '<h3>'.$row['name'].'</h3>';
             
