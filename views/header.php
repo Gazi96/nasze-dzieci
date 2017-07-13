@@ -10,8 +10,7 @@
         <header id="header">
             <nav>
                 <div><a href="<?php echo URL; ?>">LOGO</a></div>
-                <div id="top-nav">FUNDACJA NASZE DZIECI
-                </div>
+                <div id="top-nav"><h1>STOWARZYSZENIE NASZE DZIECI</h1></div>
                 <div id="nav">
                     <ul>
                         <li><a href="<?php echo URL; ?>aktualnosci">Aktualności</a></li>

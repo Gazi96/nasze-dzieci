@@ -17,7 +17,7 @@
         foreach ($news as $row){
             echo "<div class='aktualnosci'><div class='zdjecie'></div>";
             echo "<a href='".$row['href']."'>";
-            echo '<h1>'.$row['name'].'</h1>';
+            echo '<h3>'.$row['name'].'</h3>';
             
             foreach ($describes[$row['id']] as $des){
                 if(strlen($des['paragraph']) > 250){
