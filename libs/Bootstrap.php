@@ -69,7 +69,8 @@ class Bootstrap {
             'cms-nasze-dzieci-panel' => 'AdminPanel',
             'errors' => 'Errors',
             'dzialania' => 'Actions',
-            'statut' => 'Statute');
+            'statut' => 'Statute',
+            'partnerzy' => 'Partners');
         $this->controller = new $controllers[$url[0]];
         $this->controller->loadModel($controllers[$url[0]]);
         

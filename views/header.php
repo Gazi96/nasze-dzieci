@@ -21,7 +21,7 @@
                             </ul>
                         </li>
                         <li><a href="<?php echo URL; ?>mozesz-pomoc">Jak możesz pomóc</a></li>
-                        <li><a href="<?php echo URL; ?>mozesz-pomoc">Partnerzy</a></li>
+                        <li><a href="<?php echo URL; ?>partnerzy">Partnerzy</a></li>
                         <li><a href="<?php echo URL; ?>kontakt">Kontakt</a></li>
                     </ul>
                 </div>
