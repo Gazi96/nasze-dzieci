@@ -4,8 +4,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title><?php echo $this->title; ?> - Stowarzyszenie Nasze Dzieci</title>
         <link rel="stylesheet" href='<?php echo URL; ?>public/css/default.css'/>
+        <link rel="stylesheet" href='<?php echo URL; ?>public/fontello/css/fontello.css'/>
     </head>
     <body>
+      
+        <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+                </script>
+      
        
         <header id="header">
             <nav>
