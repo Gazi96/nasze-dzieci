@@ -1,3 +1,3 @@
 <?php
 
-define('URL', 'http://localhost/nasze_dzieci/');
+define('URL', 'http://nasze-dzieci.pl/');

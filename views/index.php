@@ -1,5 +1,10 @@
-<div>
-    <div id="main-img"></div>
+<main>
+    <div id="main-img">
+        <h2>"Kiedy śmieje się dziecko, śmieje się cały świat"
+            <strong>~Janusz Korczak</strong>
+        </h2>
+        
+    </div>
     
     <div id="news">
        <h2>Aktualności</h2>
@@ -8,27 +13,17 @@
         </figure>
         
         
-        <div id="archiwum">
-            <h3>Archiwum</h3>
-            <ul>
-                <li><a href="#">styczeń</a></li>
-                <li><a href="#">luty</a></li>
-                <li><a href="#">marzec</a></li>
-                <li><a href="#">kwiecień</a></li>
-                <li><a href="#">maj</a></li>
-                <li><a href="#">czerwiec</a></li>
-                <li><a href="#">lipiec</a></li>
-                <li><a href="#">sierpień</a></li>
-                <li><a href="#">wrzesień</a></li>
-                <li><a href="#">październik</a></li>
-                <li><a href="#">listopad</a></li>
-                <li><a href="#">grudzień</a></li>
-            </ul>
+        <div id="tekst">
+            <h3>Nazwa aktualności</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi assumenda ullam aperiam est sapiente obcaecati, officiis, quam itaque minus reprehenderit id nostrum voluptates quibusdam atque quas, tempore deleniti. Magnam, ratione.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dolorem consectetur amet fugit? Iure incidunt, aspernatur tempora necessitatibus vel quos, consequuntur explicabo praesentium sequi sed assumenda, dolores, molestias quaerat!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            </p>
         </div>   
     </div>
     
     <div id="goal">
-        <h2>Nadchodzące wydarzenia</h2>
         <div id="event">
             <figure class="figure">
                 <img src="public/img/dzieci.jpg" alt="">
@@ -59,9 +54,15 @@
            
         <div id="fb">  
             <h3>FB</h3>
-            <div class="fb-page" data-href="https://www.facebook.com/Stowarzyszenie-Nasze-Dzieci-128761657187814/" data-tabs="timeline" data-width="380" data-height="380" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+            <div class="fb-page" data-href="https://www.facebook.com/Stowarzyszenie-Nasze-Dzieci-128761657187814/" data-tabs="timeline" data-width="380" data-height="545" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
         </div>
            
+    </div>
+    
+    <div id="help">
+        <h2>Chcę pomóc</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat corrupti excepturi, unde similique blanditiis. Quam expedita iusto voluptatem quod, voluptate harum nulla debitis, modi vitae a tempore quis odit explicabo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat corrupti excepturi, unde similique blanditiis. Quam expedita iusto voluptatem quod, voluptate harum nulla debitis, modi vitae a tempore quis odit explicabo.</p>
     </div>
     
     <div id="partnerzy">
@@ -70,39 +71,6 @@
             <i class="border"></i><i class="icon-group"></i><i class="border"></i>
         </div>
     </div>
-    
-    
-    <?php
-    echo $this->title;
-    $news = $this->news;
-    $describes = $this->describes;
-    $images = $this->images;
-    
-    if($news !== false){
-        echo "<div id='aktualnosci'>";
-        echo "<h2>Aktualności</h2>";
-        foreach ($news as $row){
-            echo "<div class='aktualnosci'>";
-            //  TUTAJ MUSZE PODAC ADRES DO ZDJECIA, ONO NIE MOZE BYC W CSS
-            echo "<div class='zdjecie'></div>";
-            echo "<a href='".$row['href']."'>";
-            echo '<h3>'.$row['name'].'</h3>';
-            
-            foreach ($describes[$row['id']] as $des){
-                if(strlen($des['paragraph']) > 250){
-                    $des['paragraph'] = substr($des['paragraph'], 0, 250);
-                    $des['paragraph'] = substr($des['paragraph'], 0, strrpos($des['paragraph'], ' ')) . " ...";
-                }
-                echo '<p>'.$des['paragraph'].'</p>';
-            }
-            echo '</a>';
-            
-            echo '</div>';
-        }
-    }
-    ?>
-
-    <div class="clear"></div>
     
     <div id="contact">
         <div class="top-contact">
@@ -120,4 +88,5 @@
         </div>  
          <div class="clear"></div>
     </div>
-</div>
+            
+</main>
