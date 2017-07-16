@@ -33,19 +33,19 @@
             
             <figure class="figure">
                 <img src="public/img/dzieci.jpg" alt="">
-                <figcaption>Zdjęcie2</figcaption>
+                <figcaption>Zdjęcie 2</figcaption>
             </figure>
             
             <div class="clear"></div>
             
             <figure class="figure">
                 <img src="public/img/dzieci.jpg" alt="">
-                <figcaption>Zdjęcie3</figcaption>
+                <figcaption>Zdjęcie 3</figcaption>
             </figure>
             
             <figure class="figure">
                 <img src="public/img/dzieci.jpg" alt="">
-                <figcaption>Zdjęcie4</figcaption>
+                <figcaption>Zdjęcie 4</figcaption>
             </figure>
             
             <div class="clear"></div>
@@ -54,7 +54,7 @@
            
         <div id="fb">  
             <h3>FB</h3>
-            <div class="fb-page" data-href="https://www.facebook.com/Stowarzyszenie-Nasze-Dzieci-128761657187814/" data-tabs="timeline" data-width="380" data-height="545" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+            <div class="fb-page" data-href="https://www.facebook.com/Stowarzyszenie-Nasze-Dzieci-128761657187814/" data-tabs="timeline" data-width="380" data-height="455" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
         </div>
            
     </div>
@@ -70,6 +70,15 @@
         <div id="border">  
             <i class="border"></i><i class="icon-group"></i><i class="border"></i>
         </div>
+        
+        <div id="firm">
+            <div class="logo"><img src="public/img/logo1.png" alt=""></div>
+            <div class="logo"><img src="public/img/logo2.jpg" alt=""></div>
+            <div class="logo"><img src="public/img/logo3.jpg" alt=""></div>
+            <div class="logo"><img src="public/img/logo4.png" alt=""></div>
+            <div class="logo"><img src="public/img/logo5.png" alt=""></div>
+        </div>
+        
     </div>
     
     <div id="contact">

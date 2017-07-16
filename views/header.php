@@ -26,12 +26,19 @@
                     <div id="logo">
                         <img src="public/img/opp.png" alt="">       
                     </div>
-                    
-                    <h1>STOWARZYSZENIE NASZE DZIECI</h1>
+                    <div id="naglowek">
+                        <h1>STOWARZYSZENIE NASZE DZIECI</h1>
+                    </div>
+                       
+                <div id="krs">
                     <h2>KRS 0321775696</h2>
+                </div>
+                 
+                <div id="media">    
                     <span>1<i>%</i></span>
                     <i class="icon-facebook"></i>
-                    
+                </div> 
+                
                 </div>
                 
                 <div id="nav">
