@@ -3,8 +3,25 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title><?php echo $this->title; ?> - Stowarzyszenie Nasze Dzieci</title>
-        <link rel="stylesheet" href='<?php echo URL; ?>public/css/default.css'/>
+        
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="public/js/slider.js"></script>
+        
+        <link rel="stylesheet" href='<?php echo URL; ?>public/fontello/css/font-awesome.min.css'/>
         <link rel="stylesheet" href='<?php echo URL; ?>public/fontello/css/fontello.css'/>
+        <link rel="stylesheet" href='<?php echo URL; ?>public/fontello2/css/fontello.css'/>
+        
+        
+        
+        <link rel="stylesheet" href='<?php echo URL; ?>public/css/default.css'/>
+        
+        <link rel="stylesheet" href='<?php echo URL; ?>public/css/responsive.css'/>
+        
+        
     </head>
     <body>
       
@@ -32,16 +49,20 @@
                        
                 <div id="krs">
                     <h2>KRS 0321775696</h2>
+                
+                    <div id="media">
+                        <span>1%</span>
+                        <i class="icon-facebook"></i>
+                    </div>
                 </div>
-                 
-                <div id="media">    
-                    <span>1<i>%</i></span>
-                    <i class="icon-facebook"></i>
-                </div> 
                 
                 </div>
                 
                 <div id="nav">
+                   
+                   <label for="drop" class="toggle">Menu</label>
+                   <input type="checkbox" id="drop">
+                   
                     <ul>
                         <li><a href="<?php echo URL; ?>aktualnosci">Aktualności</a></li>
                         <li><a href="<?php echo URL; ?>o-nas">O nas</a>
@@ -50,7 +71,7 @@
                                 <li><a href="<?php echo URL; ?>statut">Statut</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo URL; ?>mozesz-pomoc">Jak możesz pomóc</a></li>
+                        <li><a href="<?php echo URL; ?>mozesz-pomoc">Chcę pomóc</a></li>
                         <li><a href="<?php echo URL; ?>partnerzy">Partnerzy</a></li>
                         <li><a href="<?php echo URL; ?>kontakt">Kontakt</a></li>
                     </ul>

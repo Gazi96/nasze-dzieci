@@ -1,0 +1,73 @@
+@media all and (max-width: 1200px)
+{
+    #krs
+    {
+	    margin-left: 75%;
+    }
+    
+   #nav .toggle
+    {
+        display:block;
+        color: #EEC43D;
+        font-size: 24px;
+        padding-top: 20px;
+        margin-left: 90%;
+        text-decoration: none;
+        border: none;
+    }
+    
+    #nav ul
+    {
+        display: none;
+    }
+    
+    #nav #drop:checked + ul
+    {
+        margin-left: 85%;
+        display: block;  
+        text-align: center;
+    }
+    
+    #nav > ul > li
+    {
+        display: block;
+        opacity: 0.5;
+        background-color: black;
+        width: 90%;
+        padding: 10px 30px;  
+    }
+    
+    #nav > ul > li >a
+    {    
+        color: white;
+    }
+    
+}
+
+@media all and (max-width: 1000px)
+{
+    #krs
+    {
+	    margin-left: 65vw;
+    }
+    
+    #news
+    {
+        height: 450px;
+    }
+    
+    #tekst p
+    {
+        text-align: center;
+        font-size: 1.8vw;
+        color: black;
+        padding: 15px 30px;
+    }
+    
+
+}
+
+@media all and (max-width: 680px)
+{
+
+}

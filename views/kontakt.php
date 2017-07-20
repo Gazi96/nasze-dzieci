@@ -4,13 +4,43 @@
     
     $details = $this->details;
     ?>
-    <h1>Stowarzyszenie Nasze Dzieci</h1>
-    <p><?php echo $details['address1'] ?></p>
-    <p><?php echo $details['address2'] ?></p><br>
-    <p>tel. <?php echo $details['phone'] ?></p>
-    <p>e-mail: <?php echo $details['email'] ?></p><br>
-    <p>NIP: <?php echo $details['nip'] ?></p>
-    <p>REGON: <?php echo $details['regon'] ?></p>
-    <p>KRS: <?php echo $details['krs'] ?></p>
+    <!--<div id="contact_info">
+       <address id="address">
+            <h2>Kontakt</h2>
+            <p><?php echo $details['address1'] ?></p>
+            <p><?php echo $details['address2'] ?></p><br>
+            <p>tel.<?php echo $details['phone'] ?></p>
+            <p>e-mail:<a href="mailto:"><?php echo $details['email'] ?><a></a></p><br>
+            <p>NIP: <?php echo $details['nip'] ?></p>
+            <p>REGON: <?php echo $details['regon'] ?></p>
+            <p>KRS: <?php echo $details['krs'] ?></p>
+        </address>
+    </div>-->
+    <div id="kontakt">
+       
+        <div id="map2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.770408862748!2d19.963850337907807!3d50.09058528852484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165aec69a0fcd5%3A0xff9211ff74d0b9bf!2sJakuba+Majora+12A%2C+Krak%C3%B3w!5e0!3m2!1sen!2spl!4v1500478933922"
+            frameborder="0" style="border:0; width:100%; height: 100%; " allowfullscreen>
+            </iframe>
+        </div>
+
+        <address id="address">
+           
+            <h2>Kontakt</h2>
+            <p><strong>Adres:</strong> ul.Budryka 11, 31-061 Kraków</p>
+            <p><strong>Telefon:</strong> 730 682 539</p>
+            <p><strong>E-mail:</strong>
+            <a href="mailto:stownaszedzieci@go2.pl">stownaszedzieci@go2.pl</a></p>
+            <br>            
+            <p><strong>REGON:</strong> 123456789</p>
+            <p><strong>NIP:</strong> 35135314321</p>
+            <p><strong>KRS:</strong> 42341221432</p>
+
+        </address>
+        
+    </div>
+
+    
+    
     
 </div>

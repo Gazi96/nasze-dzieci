@@ -6,9 +6,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+p,a
+{
+    font-size: 18px;
+}
+
 #header
 {
-    height: 17vh;
+    height: 110px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -16,7 +21,7 @@
 #top-nav
 {
     width: 100%; 
-    height: 7vh;
+    height: 45px;
     background-color: #2a2b2c;
     color: gray;
     border-bottom: 1px solid #EEC43D;
@@ -48,13 +53,6 @@
     float: left;
 }
 
-#krs
-{
-    margin-top: 18px;
-    float: left;
-    margin-left: 38%;
-}
-
 #top-nav h1
 {
     margin-top: 2px;
@@ -63,25 +61,29 @@
     display: inline;
 }
 
-#krs h2
-{   
-    text-align: right;
-    font-size: 21px;
-    color: orange;
-    display: inline;    
-}
-
 #krs
 {
-    padding-top:2px;
+    margin-left: 75.5%;
+    
 }
 
-#media
+#krs h2
+{   
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    color: orange; 
+    float: left;
+    margin-top: 22px;
+}
+
+#media 
 {
-    padding-top: 22px;
+    margin-top: 22px;
+	float: left;
 }
 
-#media span
+#krs span
 {
     color: orange;
     font-size: 16px;
@@ -91,28 +93,22 @@
     margin-left: 8px;
 }
 
-#media span i
-{
-    margin-top: 50px;
-    font-size: 13px;
-}
-
-#media>i
+#krs i
 {
     padding: 2px;
-    font-size: 16px;
+    font-size: 17px;
     border-radius: 100%;
     border: 1px solid #4d70ba;
     margin-left: 5px;
     color: #4d70ba;
+    padding-bottom: 1px;
 }
 
 #nav
 {
     background-color: #1e1e20;
     width: 100%;
-    height: 10vh;
-    box-sizing: border-box;
+    height: 65px;
     padding-top: 1%;
     font-size: 30px;
     box-sizing: border-box;
@@ -156,39 +152,159 @@
     display: none;
 }
 
-#main-img
+#nav .toggle,[id="drop"]
 {
-    box-sizing: border-box;
-    background-image: url("../img/dzieci.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 100%; 
-    
-    position: relative;
-    
+    display: none;
 }
 
-#main-img h2
+
+
+.slider-caption
 {
     box-sizing: border-box;
     background-color: #EEC43D;
     opacity: 0.6;
     padding-top: 30%;
-    text-align: center;
-    font-size: 45px;
+    font-size: 100px;
     color: black;
     height: 600px;
+    
 }
 
-#main-img h2 strong
+#napis
 {
-    line-height: normal;
-    font-size: 20px;
-    margin-left: 65%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: right;
+}
+
+.slider-caption h2
+{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.slider-caption strong
+{
+    color: white;
+    font-size: 15px;
+    margin-right: 5%;
+}
+
+#slider {
+	overflow: hidden;
+	height: 550px;
+	position: relative;
+}
+
+.slide-show {
     
+	position: absolute;
+	height: 100%;	
+}
+
+.slide-show .single-slide {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    
+    
+}
+
+#slider .slide-show .single-slide img {
+	border: none;
+	width: 100%;
+	min-height: 100%;
+}
+
+#slider .slide-show .single-slide .slider-caption {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+	text-align: center;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #fff;
+
+}
+
+#slider .slider-arrows a{
+	top:50%;
+	transform: translateY(-50%);
+	font-size: 3em;
+	color: #fff;
+}
+
+#slider .slider-arrows a:hover{
+	color: #333;
+}
+
+#slider .slider-arrows .prev-slide{
+	position: absolute;
+	left: 0;
+	z-index: 10;
+}
+
+#slider .slider-arrows .next-slide {
+	position: absolute;
+	right: 0;
+	z-index: 10;
+}
+
+#photo1
+{
+    background-image: url("../img/dzieci.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo2
+{
+    background-image: url("../img/dzieci2.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo3
+{
+    background-image: url("../img/dzieci3.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo4
+{
+    background-image: url("../img/dzieci4.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo5
+{
+    background-image: url("../img/dzieci6.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2
@@ -212,7 +328,6 @@ h3
     float: left;
     height: 500px;
     width: 20%;
-    margin-left: 
     font-size: 20px;
     margin-left: 4%;
     padding: 5px;
@@ -242,18 +357,20 @@ h3
 #tekst
 {
     float: left;
-    width:30%;
-    margin-left: 10%;
+    width:42.5%;
     height: 400px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 27px;
+    box-sizing: border-box;
+
 }
 
 #tekst p
 {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.5vw;
     color: black;
+    padding: 15px 30px;
 }
 
 .zdjecie
@@ -292,7 +409,7 @@ h3
 {
     background-color: #1e1e20 ;
     height: 300px;
-    font-size: 20px;
+    font-size: 2vw;
     display: block;
     float: left;
     padding-top:20px;
@@ -303,7 +420,7 @@ h3
 {
     text-align: center;
     height: 50px;
-    font-size: 20px;
+    font-size: 1.5vw;
     display: inline-block;
     padding-left: 50px;
     padding-right: 50px;
@@ -315,33 +432,42 @@ h3
     text-align: center;
 }
 
-#news, #goal
+#news
 {
-    width: 80vw;
-    height: 500px;
-    margin: 40px auto;
-    text-align: center;
+    width: 100%;
+    height: 480px;
+    margin-top: 60px;
 }
 
 #goal
 {
+    width: 80vw;
     height: 550px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 #figure
 {
+    margin-left: 9.5%;
     border-top: 2px solid #EEC43D;
-    width:60%;
+    width:48%;
     height: 400px;
     float: left;
     padding-top: 25px;
 }
 
+#news h2
+{
+    padding-left: 9%;
+}
+
 #event
 {
-    width:60%;
-    height: 300px;
+    width:59.5%;
+    height: 450px;
     float: left;
+    
 }
 
 #figure img
@@ -354,8 +480,8 @@ h3
 #fb
 {
     float: left;
-    width:30%;
-    margin-left: 10%;
+    width: 31%;
+    margin-left: 9%;
     height: 400px;
     text-align: center;
 }
@@ -393,9 +519,9 @@ figcaption
     font-size: 20px;
 }
 
-#partnerzy
+#partnerzy, #help
 {
-    margin-top: 50px;
+    margin-top: 80px;
     width: 80vw;
     height: 200px;
     font-size: 20px;
@@ -409,7 +535,7 @@ figcaption
     text-align: center;
 }
 
-#partnerzy i
+#partnerzy i, #help i
 {
     display: inline-block;
     font-size: 1em;
@@ -418,7 +544,7 @@ figcaption
 
 #border
 {
-    width: 100%;
+    width: 80vw;
     margin-left:auto;
     margin-right: auto;
 }
@@ -426,7 +552,7 @@ figcaption
 .border
 {
     border: 1px solid black;
-    width:37.5vw;
+    width:37vw;
 }
 
 .info h4
@@ -443,10 +569,7 @@ figcaption
 
 #help
 {
-    width: 80vw;
-    height: 200px;
-    margin: 50px auto;
-    text-align: center;
+    margin-top: 30px;
 }
 
 #help h2
@@ -458,7 +581,7 @@ figcaption
 #help p
 {
     padding: 10px;
-    font-size: 20px;
+    font-size: 1.6vw;
 }
 
 #firm
@@ -480,6 +603,60 @@ figcaption
     width: 100%;
     height: 100%;
 }
+
+#kontakt
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+#kontakt h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#map2
+{
+    height: 300px;
+    width: 50%;
+    float: left;
+}
+
+#address
+{
+    float:left;
+    width: 50%;
+    height: 400px;
+    text-align: left;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+#address strong
+{
+    text-align: left;
+    font-size: 15px;
+    color: black;
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+#address p a
+{
+    text-decoration: none;
+    color: #EEC43D;
+}
+
+
+
+
+
+
 
 
 
