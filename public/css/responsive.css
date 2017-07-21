@@ -67,7 +67,139 @@
 
 }
 
+@media all and (max-width: 850px)
+{
+    #media 
+    {
+	    display: none;
+    }
+    
+    #krs 
+    {
+	    margin-left: 75%;
+    }
+    
+    #contact
+    {
+        display: none;
+    }
+    
+    #contact2 
+    {
+	    display: block;
+    }
+    
+    
+}
+
 @media all and (max-width: 680px)
 {
-
+    h1
+    {
+        text-align: center;
+    }
+    
+    #media 
+    {
+	    display: none;
+    }
+    
+    #krs 
+    {
+	    display: none;
+    }
+    
+    #nav .toggle
+    {
+        margin-left: 80%;
+    }
+      
+    .krs-resp
+    {
+        text-align: center;
+        display: block;
+    }
+    
+    #tekst 
+    {
+	    display: none;
+    }
+        
+    #figure 
+    {
+        width: 80%;
+	    margin-left: 10%;
+        padding-top: 5px;
+        height: 300px;
+    }
+    
+    #news 
+    {
+	    height: 360px;
+    }
+    
+    #news h2
+    {
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+    #news figcaption
+    {
+        text-align: center;
+        font-size: 25px;
+        display: block;
+    }
+    
+    #goal 
+    {
+	    width: 80%;
+        height: 300px;
+    }
+    
+    #event
+    {
+        width:100%;
+        height: 450px; 
+        margin:0;
+        clear: both;
+    }
+    
+     #event .figure     
+    {
+        margin-bottom: 50px;
+        height: 150px;
+	    width: 48%;
+    }
+    
+     #event .figure:nth-of-type(2n)
+    {
+        margin-left: 4%;
+    }
+    
+    #event .figure img
+    {
+        width: 100%;
+    }
+    
+    #fb 
+    {
+        display: none;
+	    clear: both;
+    }
+    
+    #help 
+    {
+	    height: 340px;
+    }
+    
+    #help p
+    {
+        padding: 10px;
+        font-size: 3vw;
+    }
+    
+    
+    
+    
 }

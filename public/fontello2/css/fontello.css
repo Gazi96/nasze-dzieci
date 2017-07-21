@@ -74,8 +74,8 @@
 .icon-left-open:before { content: '\e810'; } /* '' */
 .icon-right-open-big:before { content: '\e811'; } /* '' */
 .icon-left-open-big:before { content: '\e812';  } /* '' */
-.icon-right-open-1:before { content: '\e813'; font-size: 60px; color:white; font-weight: 200; opacity: 0.8; } /* '' */
-.icon-left-open-1:before { content: '\e814'; font-size: 60px; color:white; font-weight: 200; opacity: 0.8;} /* '' */
+.icon-right-open-1:before { content: '\e813'; font-size: 60px; color:white; font-weight: 200; opacity: 0.6; } /* '' */
+.icon-left-open-1:before { content: '\e814'; font-size: 60px; color:white; font-weight: 200; opacity: 0.6;} /* '' */
 .icon-menu-1:before { content: '\f008'; } /* '' */
 .icon-link:before { content: '\f07b'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */

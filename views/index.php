@@ -52,12 +52,14 @@
                 <a href="#" class="prev-slide"><i class="icon-left-open-1" aria-hidden="true"></i></a>
                 <a href="#" class="next-slide"><i class="icon-right-open-1" aria-hidden="true"></i></a>
             </div>
+            
         </div>
     
     <section id="news">
        <h2>Aktualności</h2>
         <figure id="figure">
             <img src="public/img/dzieci.jpg" alt="">
+            <figcaption>Nazwa aktualności</figcaption>
         </figure>
         
         
@@ -99,10 +101,11 @@
             <div class="clear"></div>
             
         </section>
-           
+        
+        
         <aside id="fb">  
             <h3>FB</h3>
-            <div class="fb-page" data-href="https://www.facebook.com/Stowarzyszenie-Nasze-Dzieci-128761657187814/" data-tabs="timeline"  data-height="455" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" style="width: 100%;">
+            <div class="fb-page" data-href="https://www.facebook.com/Stowarzyszenie-Nasze-Dzieci-128761657187814/" data-tabs="timeline"  data-height="445" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" style="width: 100%;">
             <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
         </aside>
            

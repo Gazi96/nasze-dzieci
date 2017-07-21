@@ -13,7 +13,7 @@ p,a
 
 #header
 {
-    height: 110px;
+    min-height: 110px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -21,14 +21,13 @@ p,a
 #top-nav
 {
     width: 100%; 
-    height: 45px;
+    min-height: 45px;
     background-color: #2a2b2c;
     color: gray;
     border-bottom: 1px solid #EEC43D;
     padding-left: 5%;
     box-sizing: border-box;
     position: relative;
-    
 }
 
 #logo
@@ -64,7 +63,14 @@ p,a
 #krs
 {
     margin-left: 75.5%;
-    
+}
+
+.krs-resp
+{
+    text-align: center;
+    padding-top: 0px;
+    display:none;
+    height: 10px;
 }
 
 #krs h2
@@ -108,7 +114,7 @@ p,a
 {
     background-color: #1e1e20;
     width: 100%;
-    height: 65px;
+    min-height: 65px;
     padding-top: 1%;
     font-size: 30px;
     box-sizing: border-box;
@@ -121,6 +127,7 @@ p,a
     padding-right: 5px;
     padding-left: 5px;
     padding-top: 10px;
+     position: relative;
 }
 
 #nav ul li
@@ -131,7 +138,6 @@ p,a
     border-right: 1px solid grey;
     padding-left: 15px;
     padding-right: 15px;
-    
 }
 
 #nav ul li:last-child
@@ -318,7 +324,7 @@ h3
 {
     font-size: 20px;
     text-align: center;
-    color: gray;  
+    color: #2a2b2c;  
 }
 
 .aktualnosci
@@ -362,7 +368,6 @@ h3
     text-align: center;
     margin-top: 27px;
     box-sizing: border-box;
-
 }
 
 #tekst p
@@ -432,6 +437,32 @@ h3
     text-align: center;
 }
 
+#contact2
+{
+	display: none;
+}
+
+.top-contact2
+{
+    width: 100%;
+    text-align: center;
+    background-color: #2a2b2c;
+}
+
+.top-contact2 h4
+{
+    font-size:25px;
+    color: #EEC43D;
+    background-color: 
+}
+
+.info2
+{
+    background-color: #1e1e20;
+    color: gray;
+    padding: 30px;
+}
+
 #news
 {
     width: 100%;
@@ -439,17 +470,22 @@ h3
     margin-top: 60px;
 }
 
+#news figcaption
+{
+   display: none;
+}
+
 #goal
 {
-    width: 80vw;
+    width: 100%;
     height: 550px;
     margin: 20px auto;
-    text-align: center;
+    text-align: center;    
 }
 
 #figure
 {
-    margin-left: 9.5%;
+    margin-left: 8%;
     border-top: 2px solid #EEC43D;
     width:48%;
     height: 400px;
@@ -459,15 +495,16 @@ h3
 
 #news h2
 {
-    padding-left: 9%;
+    padding-left: 8%;
 }
 
 #event
 {
-    width:59.5%;
+    width:48%;
     height: 450px;
-    float: left;
-    
+    float: left; 
+    margin-left: 8%;
+  
 }
 
 #figure img
@@ -480,10 +517,9 @@ h3
 #fb
 {
     float: left;
-    width: 31%;
-    margin-left: 9%;
-    height: 400px;
-    text-align: center;
+    width: 43%;
+    height: 492px;
+    text-align: center;  
 }
 
 h3
