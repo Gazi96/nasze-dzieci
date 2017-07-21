@@ -35,7 +35,7 @@
 
                     <div id="top-nav">
                         <div id="logo">
-                            <img src="public/img/opp.png" alt="">       
+                            <img src="public/img/log.png" alt="">       
                         </div>
                         <div id="naglowek">
                             <h1>STOWARZYSZENIE NASZE DZIECI</h1>
