@@ -98,6 +98,8 @@
                 <figcaption>Zdjęcie 4</figcaption>
             </figure>
             
+            
+            
             <div class="clear"></div>
             
         </section>
@@ -125,11 +127,47 @@
         </div>
         
         <div id="firm">
-            <div class="logo"><img src="public/img/logo1.png" alt=""></div>
-            <div class="logo"><img src="public/img/logo2.jpg" alt=""></div>
-            <div class="logo"><img src="public/img/logo3.jpg" alt=""></div>
-            <div class="logo"><img src="public/img/logo4.png" alt=""></div>
-            <div class="logo"><img src="public/img/logo5.png" alt=""></div>
+         
+          
+          
+           <div class="mySlides not">
+
+                   <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                
+                    <div class="logo"><img src="public/img/partners/bahlsen_logo.jpg" alt="bahlsen"></div>
+                    <div class="logo"><img src="public/img/partners/duet.png" alt="duet"></div>
+                    <div class="logo"><img src="public/img/partners/elwolight-logo.png" alt="duet"></div>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+           </div>
+           
+           
+            
+            <div class="mySlides">
+               <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <div class="logo"><img src="public/img/partners/gryfix.png" alt="gryfix"></div>
+                    <div class="logo"><img src="public/img/partners/berner.png" alt="berner"></div>
+                    <div class="logo"><img src="public/img/partners/conus.jpg" alt="conus"></div>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            
+            <div class="mySlides">
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <div class="logo"><img src="public/img/partners/euro-trade.jpg" alt="euro-trade"></div>
+                    <div class="logo"><img src="public/img/partners/kmc-service.png" alt="kmc-service"></div>
+                    <div class="logo"><img src="public/img/partners/heban.png" alt="heban"></div>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            
+            <div class="mySlides">
+               <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <div class="logo"><img src="public/img/partners/hurt-poz.png" alt="hurt-poz"></div>
+                    <div class="logo"><img src="public/img/partners/lajkonik.jpg" alt="kmc-service"></div>
+                    <div class="logo"><img src="public/img/partners/lartus.png" alt="lartus"></div>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            
+            
+            
         </div>
         
     </section>

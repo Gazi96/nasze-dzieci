@@ -21,7 +21,7 @@ p,a
 #top-nav
 {
     width: 100%; 
-    min-height: 45px;
+    height: 45px;
     background-color: #2a2b2c;
     color: gray;
     border-bottom: 1px solid #EEC43D;
@@ -33,22 +33,25 @@ p,a
 #logo
 {
     position: absolute;
-    top: 12px;
-    width: 9.5%;
-    height: 190%;
+    z-index: 1000;
+    width: 120px;
+    height: 120px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #EEC43D;
 }
 
 #logo img
 {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 #naglowek
 {
-    margin-top: 18px;
-    padding-top: 2px;
-    margin-left: 10%;
+    padding-top: 18px;
     float: left;
 }
 
@@ -57,7 +60,7 @@ p,a
     margin-top: 2px;
     font-size: 21px;
     color: grey;
-    display: inline;
+    padding-left: 135px;
 }
 
 #krs
@@ -127,7 +130,7 @@ p,a
     padding-right: 5px;
     padding-left: 5px;
     padding-top: 10px;
-     position: relative;
+    position: relative;
 }
 
 #nav ul li
@@ -153,6 +156,11 @@ p,a
     font-family: 'Roboto', sans-serif;
 }
 
+#nav ul li a:hover
+{
+    color: #EEC43D;
+}
+
 #nav ul li ul
 {
     display: none;
@@ -168,8 +176,9 @@ p,a
 .slider-caption
 {
     box-sizing: border-box;
-    background-color: #EEC43D;
-    opacity: 0.6;
+/*    background-color: #EEC43D;
+    opacity: 0.6;*/
+    
     padding-top: 30%;
     font-size: 100px;
     color: black;
@@ -225,8 +234,8 @@ p,a
 	min-height: 100%;
 }
 
-#slider .slide-show .single-slide .slider-caption {
-	position: absolute;
+#slider .slide-show .single-slide .slider-caption
+{
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 5;
@@ -265,17 +274,17 @@ p,a
 
 #photo1
 {
-    background-image: url("../img/dzieci.jpg");
-    height: 100%; 
-    background-attachment: fixed;
+    background-image: linear-gradient(to bottom,rgba(238, 196, 61, 0.6),rgba(238, 196, 61, 0.6)), url("../img/dzieci.jpg");
+    height: 100%; s
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 }
 
 #photo2
 {
-    background-image: url("../img/dzieci2.jpg");
+    background-image: linear-gradient(to bottom,rgba(238, 196, 61, 0.6),rgba(238, 196, 61, 0.6)), url("../img/dzieci2.jpg");
     height: 100%; 
     background-attachment: fixed;
     background-position: top;
@@ -285,7 +294,7 @@ p,a
 
 #photo3
 {
-    background-image: url("../img/dzieci3.jpg");
+    background-image: linear-gradient(to bottom,rgba(238, 196, 61, 0.6),rgba(238, 196, 61, 0.6)), url("../img/dzieci3.jpg");
     height: 100%; 
     background-attachment: fixed;
     background-position: top;
@@ -295,7 +304,7 @@ p,a
 
 #photo4
 {
-    background-image: url("../img/dzieci4.jpg");
+    background-image: linear-gradient(to bottom,rgba(238, 196, 61, 0.6),rgba(238, 196, 61, 0.6)), url("../img/dzieci4.jpg");
     height: 100%; 
     background-attachment: fixed;
     background-position: top;
@@ -305,7 +314,7 @@ p,a
 
 #photo5
 {
-    background-image: url("../img/dzieci6.jpg");
+    background-image: linear-gradient(to bottom,rgba(238, 196, 61, 0.6),rgba(238, 196, 61, 0.6)), url("../img/dzieci5.jpg");
     height: 100%; 
     background-attachment: fixed;
     background-position: top;
@@ -555,11 +564,22 @@ figcaption
     font-size: 20px;
 }
 
-#partnerzy, #help
+#help
 {
     margin-top: 80px;
     width: 80vw;
     height: 200px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#partnerzy 
+{
+    margin-top: 80px;
+    width: 80vw;
+    height: 220px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -622,22 +642,46 @@ figcaption
 
 #firm
 {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    height: 200px;
 }
 
 .logo
 {
     display: inline-block;
-    width: 50px;
+    width: 15%;
     height: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .logo img
 {
     width: 100%;
-    height: 100%;
+    height: 100%;  
+}
+
+.w3-button
+{
+    color: #2a2b2c;
+    background-color:  #EEC43D;
+   
+    float: left;
+    font-size: 30px;
+    border: 0;
+}
+
+.w3-display-right
+{
+    margin-right: 1.6%;
+    float: right;
+}
+
+.mySlides:not(.not)
+{
+    display: none;
 }
 
 #kontakt
@@ -673,6 +717,15 @@ figcaption
     box-sizing: border-box;
 }
 
+#address
+{
+    width: 50%;
+    height: 400px;
+    text-align: left;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
 #address strong
 {
     text-align: left;
@@ -687,6 +740,72 @@ figcaption
     text-decoration: none;
     color: #EEC43D;
 }
+
+#nextnews
+{   
+    margin-left: 15%;
+    width: 40%;
+    border: 1px solid green;
+    height: 500px;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+#asidenews 
+{
+    margin-left: 5%;
+    float: left;
+    width: 25%;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#nextnews figure
+{
+    width: 80%;
+    height: 300px;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#nextnews figure
+{
+    width: 100%;
+    text-align: center;
+}
+#asidenews h3
+{
+    text-align: center;
+    border-bottom: 1px solid yellow;
+}
+
+#asidenews #ulnews li 
+{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+#asidenews #ulnews li a
+{
+    color: black;
+    text-decoration: none;
+    
+}
+
+
 
 
 

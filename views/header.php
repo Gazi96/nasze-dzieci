@@ -28,6 +28,28 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
                 </script>
+                
+           <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block"; 
+                    
+                
+                }
+            </script>     
       
        
             <header id="header">
@@ -37,6 +59,8 @@
                         <div id="logo">
                             <img src="public/img/log.png" alt="">       
                         </div>
+                        <div id="logo2"></div>
+                                
                         <div id="naglowek">
                             <h1>STOWARZYSZENIE NASZE DZIECI</h1>
                         </div>

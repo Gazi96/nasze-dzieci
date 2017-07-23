@@ -3,6 +3,14 @@
     #krs
     {
 	    margin-left: 75%;
+        z-index: 11;
+    }
+    
+    #nav
+    {
+	    position: absolute;
+        z-index: 10;
+        height: 45px;
     }
     
    #nav .toggle
@@ -14,32 +22,39 @@
         margin-left: 90%;
         text-decoration: none;
         border: none;
+        position: relative;
+        z-index: 1000;
     }
     
     #nav ul
     {
         display: none;
+        
     }
     
     #nav #drop:checked + ul
     {
-        margin-left: 85%;
+        width: 20%;
+        margin-left: 80%;
         display: block;  
-        text-align: center;
     }
     
     #nav > ul > li
     {
         display: block;
-        opacity: 0.5;
+        opacity: 0.8;
         background-color: black;
         width: 90%;
         padding: 10px 30px;  
+        box-sizing: border-box;
+        text-align: center;
+        
     }
     
     #nav > ul > li >a
     {    
         color: white;
+        font-size: 2vw;
     }
     
 }
@@ -94,10 +109,15 @@
 
 @media all and (max-width: 680px)
 {
-    h1
+    #top-nav h1
     {
+        padding-top: 7px;
         text-align: center;
+        font-size: 13px;
+        padding-left: 70px;
     }
+    
+    
     
     #media 
     {
@@ -113,11 +133,23 @@
     {
         margin-left: 80%;
     }
+    
+    #nav #drop:checked + ul
+    {
+        width: 25%;
+        margin-left: 75%;
+        display: block;  
+        text-align: center;
+    }
       
     .krs-resp
     {
-        text-align: center;
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translate(-50%,-50%);
         display: block;
+        font-size: 18px;
     }
     
     #tekst 
@@ -198,6 +230,13 @@
         padding: 10px;
         font-size: 3vw;
     }
+    
+    #logo
+    {
+        width: 70px;
+        height: 70px;
+    }
+	
     
     
     
