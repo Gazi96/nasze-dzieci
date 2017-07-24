@@ -16,6 +16,7 @@
         
         <link rel="stylesheet" href='<?php echo URL; ?>public/css/default.css'/>
         <link rel="stylesheet" href='<?php echo URL; ?>public/css/responsive.css'/> 
+        
     </head>
     <body>
       

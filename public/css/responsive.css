@@ -57,6 +57,12 @@
         font-size: 2vw;
     }
     
+    #nav > ul > li >a:hover
+    {    
+        color: #EEC43D;
+        font-size: 2vw;
+    }
+    
 }
 
 @media all and (max-width: 1000px)
@@ -237,7 +243,82 @@
         height: 70px;
     }
 	
+    #resp 
+    {
+	    clear: both;
+    }
     
+    
+    
+    
+    
+    #nextnews
+    {   
+        margin: auto;
+        width: 80%;
+        margin-left: 10%;
+        box-sizing: border-box;
+        margin-top: 50px;
+    }
+
+    #asidenews 
+    {
+        margin-left: 10%;
+        width: 80%;
+        min-height: 300px;
+        box-sizing: border-box;
+        padding-top: 5px;
+        margin-top: 5px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    #nextnews .nextnews h2
+    {
+        text-align: center;
+    }
+    
+    .nextnews a 
+{
+    margin-top: 5px;
+}
+    
+
+   /* #nextnews .nextnews
+    {
+        margin: auto;
+        width: 100%;
+        min-height: 400px;
+        margin-bottom: 35px;
+    }
+
+    #nextnews .nextnews .figurenews
+    {
+        width: 100%;
+        min-height: 400px;
+        font-size: 20px;
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-top: 1px solid #EEC43D;    
+        padding-top: 20px;    
+    }
+
+    .nextnews .figurenews img
+    {
+        width: 100%;
+        height: 80%;
+    }
+
+    .nextnews .figurenews figcaption
+    {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .nextnews p
+    {
+        font-size: 16px;
+    }*/
     
     
     

@@ -1,6 +1,3 @@
-
-   
-
 <footer>
        <section id="contact">
             <div class="top-contact">
@@ -34,7 +31,13 @@
                 <div class="info2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatum obcaecati veniam, blanditiis necessitatibus sed placeat minus reiciendis commodi sint molestiae officia facere illo veritatis maxime corrupti quo distinctio dolor.</p></div>
             
         </section>
-    
+        
+        <div class="clear"></div>
+        
+        <div id="footer">
+            <p>Copyright &copy; SeRafSite-Development</p>
+        </div>
+        
 
 </footer>
 </body>

@@ -47,21 +47,48 @@
     </ul>-->
 </div> 
    
+<div id="nextnews">
+   
+    <div class="nextnews">
+        <h2>Nazwa aktualności</h2>
+        <figure class="figurenews">
 
-   
-   
-   
-   
-<section id="nextnews">
-    
-    <figure id="figure">
-        <img src="public/img/dzieci.jpg" alt="">
-        <figcaption>Nazwa aktualności</figcaption>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis aliquam asperiores laudantium quas dolore iure, illum nostrum, a perferendis, praesentium odio rem dolorem ea similique excepturi tenetur illo, sit!</p>
-    </figure> 
-    
-</section>
+            <img src="public/img/dzieci.jpg" alt="">
+            <figcaption>14 | 07 | 2017</figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis aliquam asperiores laudantium quas dolore iure, illum nostrum, a perferendis, praesentium odio rem dolorem ea similique excepturi tenetur illo, sit ...</p>
+        </figure> 
+        <a href="">więcej</a>
+    </div>
 
+    <div class="nextnews">
+       
+        <h2>Nazwa aktualności</h2>
+        <figure class="figurenews">
+
+            <img src="public/img/dzieci.jpg" alt="">
+            <figcaption> 14 | 07 | 2017 </figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis aliquam asperiores laudantium quas dolore iure, illum nostrum, a perferendis, praesentium odio rem dolorem ea similique excepturi tenetur illo, sit ...</p>
+        </figure> 
+        <a href="">więcej</a>
+    </div>
+
+
+
+    <div class="nextnews">
+       
+        <h2>Nazwa aktualności</h2>
+        <figure class="figurenews">
+
+            <img src="public/img/dzieci.jpg" alt="">
+            <figcaption> 14 | 07 | 2017</figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis aliquam asperiores laudantium quas dolore iure, illum nostrum, a perferendis, praesentium odio rem dolorem ea similique excepturi tenetur illo, sit ...</p>
+        </figure> 
+        <a href="">więcej</a>
+    </div>
+
+</div>
+
+<div id="resp"></div>
 
 <aside id="asidenews">
    
@@ -84,6 +111,11 @@
 </aside>
 
 <div class="clear"></div>
+
+
+
+
+
 
 
 

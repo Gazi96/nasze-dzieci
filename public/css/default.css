@@ -717,15 +717,6 @@ figcaption
     box-sizing: border-box;
 }
 
-#address
-{
-    width: 50%;
-    height: 400px;
-    text-align: left;
-    font-size: 20px;
-    box-sizing: border-box;
-}
-
 #address strong
 {
     text-align: left;
@@ -741,50 +732,94 @@ figcaption
     color: #EEC43D;
 }
 
+
+/*aktualnosci*/
+
 #nextnews
 {   
     margin-left: 15%;
     width: 40%;
-    border: 1px solid green;
-    height: 500px;
-    padding: 0;
     box-sizing: border-box;
     float: left;
+    margin-top: 40px;
 }
 
 #asidenews 
 {
     margin-left: 5%;
     float: left;
-    width: 25%;
-    min-height: 400px;
+    width: 30%;
+    min-height: 300px;
     box-sizing: border-box;
-    padding-top: 30px;
+    padding-top: 26px;
     text-align: center;
+    margin-top: 40px;
 }
 
-#nextnews figure
-{
-    width: 80%;
-    height: 300px;
-    font-size: 20px;
-    box-sizing: border-box;
-    padding: 0;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-#nextnews figure
+#nextnews .nextnews
 {
     width: 100%;
-    text-align: center;
+    min-height: 400px;
+    margin-bottom: 35px;
 }
+
+#nextnews .nextnews .figurenews
+{
+    width: 100%;
+    min-height: 400px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-top: 1px solid #EEC43D;    
+    padding-top: 20px;    
+}
+
+.nextnews .figurenews img
+{
+    width: 100%;
+    height: 80%;
+}
+
+.nextnews .figurenews figcaption
+{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.nextnews p
+{
+    font-size: 16px;
+}
+
+
+
+/*
+.nextnews .figurenews figcaption
+{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.nextnews p
+{
+    font-size: 16px;
+}
+
+.nextnews strong
+{
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 20px;
+    font-weight: 200;
+}
+*/
+
 #asidenews h3
 {
     text-align: center;
-    border-bottom: 1px solid yellow;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 #asidenews #ulnews li 
@@ -796,33 +831,49 @@ figcaption
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     list-style: none;
+    display: block;
+    border-bottom: 0.1px dotted gray;
+    padding: 5px;
 }
 
 #asidenews #ulnews li a
 {
     color: black;
     text-decoration: none;
+}
+
+#asidenews #ulnews li a:hover
+{
+    color: #EEC43D;
+    text-decoration: none;
+}
+
+.nextnews a 
+{
+    margin-top: 20px;
+    display: block;
+    text-align: right;
+	font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    color: #EEC43D;
+}
+
+#footer
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 20px;
+    width: 100%;
+    background-color: #2a2b2c;
+}
+
+#footer p
+{
+    text-align: center;
+    font-size: 20px;
     
 }
 
-
-
-
-
-
-
-
-
-
-
-/*
-#footer
-{
-    height: 20px;
-    width: 100%;
-    padding-left: 10%;
-    font-size: 20px;
-}
-*/
 
 
