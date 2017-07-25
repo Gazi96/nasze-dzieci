@@ -81,8 +81,9 @@
 
             <img src="public/img/dzieci.jpg" alt="">
             <figcaption> 14 | 07 | 2017</figcaption>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis aliquam asperiores laudantium quas dolore iure, illum nostrum, a perferendis, praesentium odio rem dolorem ea similique excepturi tenetur illo, sit ...</p>
+            
         </figure> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis aliquam asperiores laudantium quas dolore iure, illum nostrum, a perferendis, praesentium odio rem dolorem ea similique excepturi tenetur illo, sit ...</p>
         <a href="">więcej</a>
     </div>
 

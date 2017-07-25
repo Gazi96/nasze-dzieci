@@ -179,7 +179,7 @@ p,a
 /*    background-color: #EEC43D;
     opacity: 0.6;*/
     
-    padding-top: 30%;
+    padding-top: 10%;
     font-size: 100px;
     color: black;
     height: 600px;
@@ -766,7 +766,7 @@ figcaption
 #nextnews .nextnews .figurenews
 {
     width: 100%;
-    min-height: 400px;
+    min-height: 320px;
     font-size: 20px;
     box-sizing: border-box;
     margin: 0px auto;
@@ -774,10 +774,10 @@ figcaption
     padding-top: 20px;    
 }
 
-.nextnews .figurenews img
+#nextnews .figurenews img
 {
     width: 100%;
-    height: 70%;
+    height: 60%;
 }
 
 .nextnews .figurenews figcaption
